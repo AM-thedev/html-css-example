@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  color: #333;
+  font-size: 1.2rem;
+  font-family: noto-sans, noto-sans-jp, noto-serif-jp, libre-baskerville;
+  display: flex;
+  flex-direction: row;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+a:link, a:visited, a:hover, a:active {
+  text-decoration: none;
+}
