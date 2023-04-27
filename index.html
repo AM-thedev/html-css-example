@@ -8,45 +8,48 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css"> 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
 </head>
 <body>
   <!-- Desktop sidemenu -->
   <div class="l-sidebar">
-    <img class="c-logo" src="images/logo_lg.png">
-    <div class="p-sideMenu__search">
-      <span class='bi bi-search p-sideMenu__search__icon'></span>
-      <input class="p-sideMenu__search__bar" type="text">
-    </div>
-    <div class="p-sideMenu__dropdowns">
-      <div class="p-sideMenu__dropdown">
-        協会概要
+    <div class="p-sideMenu">
+      <img class="c-logo" src="images/logo_lg.png">
+      <div class="p-sideMenu__search">
+        <span class='bi bi-search p-sideMenu__search__icon'></span>
+        <input class="p-sideMenu__search__bar" type="text">
       </div>
-      <div class="p-sideMenu__dropdown">
-        検定・資格
+      <div class="p-sideMenu__dropdowns">
+        <div class="p-sideMenu__dropdown">
+          協会概要
+        </div>
+        <div class="p-sideMenu__dropdown">
+          検定・資格
+        </div>
+        <div class="p-sideMenu__dropdown">
+          認定制度
+        </div>
+        <div class="p-sideMenu__dropdown">
+          活動内容
+        </div>
+        <div class="p-sideMenu__dropdown">
+          会員制度
+        </div>
+        <div class="p-sideMenu__dropdown">
+          各種ガイドライン
+        </div>
       </div>
-      <div class="p-sideMenu__dropdown">
-        認定制度
+      <div class="c-socials">
+        <a class="c-social" href="#">
+          <i class="bi bi-facebook"></i>
+        </a>
+        <a class="c-social" href="#">
+          <i class="bi bi-instagram"></i>
+        </a>
+        <a class="c-social" href="#">
+          <i class="bi bi-youtube"></i>
+        </a>
       </div>
-      <div class="p-sideMenu__dropdown">
-        活動内容
-      </div>
-      <div class="p-sideMenu__dropdown">
-        会員制度
-      </div>
-      <div class="p-sideMenu__dropdown">
-        各種ガイドライン
-      </div>
-    </div>
-    <div class="c-socials">
-      <a class="c-social" href="#">
-        <i class="bi bi-facebook"></i>
-      </a>
-      <a class="c-social" href="#">
-        <i class="bi bi-instagram"></i>
-      </a>
-      <a class="c-social" href="#">
-        <i class="bi bi-youtube"></i>
-      </a>
     </div>
   </div>
   
@@ -307,28 +310,20 @@
             </div>
           </div>
         </div>
+
         <div class="p-about__info">
           <div class="p-about__info__tabs">
-            <div class="p-about__info__tab">
-              <input class="p-about__info__tab__input" type="radio" id="infoTab11" name="aboutTabGroup" checked>
-              <label class="p-about__info__tab__title" for="infoTab11">
-                協会について知りたい
-              </label>
-            </div>
-            <div class="p-about__info__tab">
-              <input class="p-about__info__tab__input" type="radio" id="infoTab12" name="aboutTabGroup">
-              <label class="p-about__info__tab__title" for="infoTab12">
-                ネイリストになりたい
-              </label>
-            </div>
-            <div class="p-about__info__tab">
-              <input class="p-about__info__tab__input" type="radio" id="infoTab13" name="aboutTabGroup">
-              <label class="p-about__info__tab__title" for="infoTab13">
-                ネイリストとして技能を高めたい
-              </label>
-            </div>
+            <button class="p-about__info__tab js-defaultClick" onclick="selectTab(event, 'about1')">
+              協会について知りたい
+            </button>
+            <button class="p-about__info__tab" onclick="selectTab(event, 'about2')">
+              ネイリストになりたい
+            </button>
+            <button class="p-about__info__tab" onclick="selectTab(event, 'about3')">
+              ネイリストとして技能を高めたい
+            </button>
           </div>
-          <div class="p-about__info__tabs__content">
+          <div class="p-about__info__tabs__content" id="about1">
             <div class="p-about__info__tabs__content__row">
               <a class="p-about__info__link" href="#">
                 <div class="p-about__info__link__text">
@@ -370,29 +365,7 @@
               </a>
             </div>
           </div>
-        </div>
-        <div class="p-about__info">
-          <div class="p-about__info__tabs">
-            <div class="p-about__info__tab">
-              <input class="p-about__info__tab__input" type="radio" id="infoTab21" name="aboutTabGroup2">
-              <label class="p-about__info__tab__title" for="infoTab21">
-                協会について知りたい
-              </label>
-            </div>
-            <div class="p-about__info__tab">
-              <input class="p-about__info__tab__input" type="radio" id="infoTab22" name="aboutTabGroup2" checked>
-              <label class="p-about__info__tab__title" for="infoTab22">
-                ネイリストになりたい
-              </label>
-            </div>
-            <div class="p-about__info__tab">
-              <input class="p-about__info__tab__input" type="radio" id="infoTab23" name="aboutTabGroup2">
-              <label class="p-about__info__tab__title" for="infoTab23">
-                ネイリストとして技能を高めたい
-              </label>
-            </div>
-          </div>
-          <div class="p-about__info__tabs__content">
+          <div class="p-about__info__tabs__content" id="about2">
             <div class="p-about__info__tabs__content__row">
               <a class="p-about__info__link" href="#">
                 <div class="p-about__info__link__text">
@@ -431,29 +404,7 @@
               </div>
             </div>
           </div>
-        </div>
-        <div class="p-about__info">
-          <div class="p-about__info__tabs">
-            <div class="p-about__info__tab">
-              <input class="p-about__info__tab__input" type="radio" id="infoTab31" name="aboutTabGroup3">
-              <label class="p-about__info__tab__title" for="infoTab31">
-                協会について知りたい
-              </label>
-            </div>
-            <div class="p-about__info__tab">
-              <input class="p-about__info__tab__input" type="radio" id="infoTab32" name="aboutTabGroup3">
-              <label class="p-about__info__tab__title" for="infoTab32">
-                ネイリストになりたい
-              </label>
-            </div>
-            <div class="p-about__info__tab">
-              <input class="p-about__info__tab__input" type="radio" id="infoTab33" name="aboutTabGroup3" checked>
-              <label class="p-about__info__tab__title" for="infoTab33">
-                ネイリストとして技能を高めたい
-              </label>
-            </div>
-          </div>
-          <div class="p-about__info__tabs__content">
+          <div class="p-about__info__tabs__content" id="about3">
             <div class="p-about__info__tabs__content__row">
               <a class="p-about__info__link" href="#">
                 <div class="p-about__info__link__text">
@@ -554,7 +505,6 @@
       <img class="c-imageBanner" src="images/nails_banner.png">
       
       <!-- Event -->
-      
 
       <div class="c-gallery">
         <div class="c-gallery__title">
@@ -562,42 +512,47 @@
             Event
           </div>
         </div>
-        <ul class="c-cards">
-          <li class="c-card">
-            <a class="c-card__container" href="#">
-              <img class="c-card__image" src="images/event1.png">
-              <span class="c-card__text">
-                TOKYO NAIL EXPO
-              </span>
-              <span class="c-card__subtext">
-                EVENT | 2022.00.00
-              </span>
-            </a>
-          </li>
-          <li class="c-card">
-            <a class="c-card__container" href="#">
-              <img class="c-card__image" src="images/event2.png">
-              <span class="c-card__text">
-                TOKYO NAIL EXPO
-              </span>
-              <span class="c-card__subtext">
-                EVENT | 2022.00.00
-              </span>
-            </a>
-          </li>
-          <li class="c-card">
-            <a class="c-card__container" href="#">
-              <img class="c-card__image" src="images/event3.png">
-              <span class="c-card__text">
-                TOKYO NAIL EXPO
-              </span>
-              <span class="c-card__subtext">
-                EVENT | 2022.00.00
-              </span>
-            </a>
-          </li>
-        </ul>
-        <img class="c-mobileCarouselPlaceholder" src="images/event_carousel_placeholder.png">
+        <div class="c-carousel">
+          <section class="splide" aria-label="Splide Basic HTML Example">
+            <div class="splide__track">
+              <ul class="splide__list">
+                <li class="splide__slide c-carousel__slide">
+                  <a class="c-card__container" href="#">
+                    <img class="c-card__image" src="images/event1.png">
+                    <span class="c-card__text">
+                      タイトルタイトルタイトル
+                    </span>
+                    <span class="c-card__subtext">
+                      EVENT | 2022.00.00
+                    </span>
+                  </a>
+                </li>
+                <li class="splide__slide c-carousel__slide">
+                  <a class="c-card__container" href="#">
+                    <img class="c-card__image" src="images/event2.png">
+                    <span class="c-card__text">
+                      タイトルタイトルタイトル
+                    </span>
+                    <span class="c-card__subtext">
+                      EVENT | 2022.00.00
+                    </span>
+                  </a>
+                </li>
+                <li class="splide__slide c-carousel__slide">
+                  <a class="c-card__container" href="#">
+                    <img class="c-card__image" src="images/event3.png">
+                    <span class="c-card__text">
+                      タイトルタイトルタイトル
+                    </span>
+                    <span class="c-card__subtext">
+                      EVENT | 2022.00.00
+                    </span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </div>
       </div>
 
       <!-- Topics -->
@@ -607,42 +562,47 @@
             Topics
           </div>
         </div>
-        <ul class="c-cards">
-          <li class="c-card">
-            <a class="c-card__container" href="#">
-              <img class="c-card__image" src="images/topics1.png">
-              <span class="c-card__text">
-                タイトルタイトルタイトル
-              </span>
-              <span class="c-card__subtext">
-                EVENT | 2022.00.00
-              </span>
-            </a>
-          </li>
-          <li class="c-card">
-            <a class="c-card__container" href="#">
-              <img class="c-card__image" src="images/topics2.png">
-              <span class="c-card__text">
-                タイトルタイトルタイトル
-              </span>
-              <span class="c-card__subtext">
-                EVENT | 2022.00.00
-              </span>
-            </a>
-          </li>
-          <li class="c-card">
-            <a class="c-card__container" href="#">
-              <img class="c-card__image" src="images/topics3.png">
-              <span class="c-card__text">
-                タイトルタイトルタイトル
-              </span>
-              <span class="c-card__subtext">
-                EVENT | 2022.00.00
-              </span>
-            </a>
-          </li>
-        </ul>
-        <img class="c-mobileCarouselPlaceholder" src="images/topics_carousel_placeholder.png">
+        <div class="c-carousel">
+          <section class="splide" aria-label="Splide Basic HTML Example">
+            <div class="splide__track">
+              <ul class="splide__list">
+                <li class="splide__slide c-carousel__slide">
+                  <a class="c-card__container" href="#">
+                    <img class="c-card__image" src="images/topics1.png">
+                    <span class="c-card__text">
+                      タイトルタイトルタイトル
+                    </span>
+                    <span class="c-card__subtext">
+                      EVENT | 2022.00.00
+                    </span>
+                  </a>
+                </li>
+                <li class="splide__slide c-carousel__slide">
+                  <a class="c-card__container" href="#">
+                    <img class="c-card__image" src="images/topics2.png">
+                    <span class="c-card__text">
+                      タイトルタイトルタイトル
+                    </span>
+                    <span class="c-card__subtext">
+                      EVENT | 2022.00.00
+                    </span>
+                  </a>
+                </li>
+                <li class="splide__slide c-carousel__slide">
+                  <a class="c-card__container" href="#">
+                    <img class="c-card__image" src="images/topics3.png">
+                    <span class="c-card__text">
+                      タイトルタイトルタイトル
+                    </span>
+                    <span class="c-card__subtext">
+                      EVENT | 2022.00.00
+                    </span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </div>
       </div>
 
       <!-- Latest Article -->
@@ -1186,7 +1146,10 @@
     </div>
   </div>
 
-
+  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+  <script src="js/carousel.js"></script>
+  <script src="js/defaultClick.js"></script>
+  <script src="js/tab.js"></script>
 
 </body>
 </html>

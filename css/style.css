@@ -12,17 +12,32 @@
 
 /* Layouts */
 .l-sidebar {
+  z-index: 1;
   display: none;
+  flex-direction: column;
+  align-items: center;
+  padding: 38px 18px;
+  gap: 24px;
+  width: 234px;
+  box-shadow: 3px 0px 4px rgba(0, 0, 0, 0.03);
+  background: white;
 }
 @media only screen and (min-width: 768px) {
   .l-sidebar {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 38px 18px;
-    gap: 24px;
-    width: 234px;
-    box-shadow: 3px 0px 4px rgba(0, 0, 0, 0.03);
+    position: absolute;
+    left: -230px; 
+    transition: 0.3s;
+  }
+  .l-sidebar:hover {
+    left: 0;
+  }
+}
+@media only screen and (min-width: 1025px) {
+  .l-sidebar {
+    display: flex;
+    position: relative;
+    left: 0;
   }
 }
 .l-top {
@@ -122,6 +137,16 @@
     display: initial;
   }
 }
+.c-carousel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 8px 0px;
+  width: 100%;
+}
+.c-carousel__slide {
+  max-width: 300px;
+}
 .c-cards {
  display: none;
 }
@@ -146,7 +171,6 @@
 .c-card__image {
   object-fit: cover;
   width: 100%;
-  min-width: 300px;
 }
 .c-card__text {
   font-family: 'Noto Serif JP';
@@ -178,7 +202,9 @@
   }
 }
 
-
+.splide:not(.is-overflow) .splide__arrows {
+  display: none;
+}
 
 .c-socials {
   display: flex;
@@ -207,6 +233,10 @@
 /* Projects */
 
   /* Side Menu */
+.p-sideMenu {
+  position: sticky;
+  height: max-content;
+}
 .p-sideMenu__search {
   position: relative;
 }
@@ -689,12 +719,10 @@
   gap: 8px;
 }
 .p-about__info__tab {
-  width: 100%
-}
-.p-about__info__tab__input {
-  display: none;
-}
-.p-about__info__tab__title {
+  border-style: none;
+  margin: 0px;
+  padding: 0px;
+
   display: flex;
   cursor: pointer;
   flex-direction: row;
@@ -715,7 +743,7 @@
   text-align: center;
   white-space: nowrap;
 }
-.p-about__info__tab__input:checked + .p-about__info__tab__title {
+.p-about__info__tab.active {
   background: #F37B9C;
   color: white;
   cursor: default;
