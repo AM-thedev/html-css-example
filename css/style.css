@@ -50,6 +50,9 @@
   flex-wrap: nowrap;
 }
 .l-content {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
   padding: 0px 0px;
 }
 .l-footer {
@@ -801,7 +804,6 @@
 }
 .p-about__info {
   display: none;
-  padding: 0px 62px;
 }
 @media only screen and (min-width: 768px) {
   .p-about__info {
@@ -809,6 +811,8 @@
     flex-direction: column;
     flex-wrap: nowrap;
     justify-content: space-between;
+    padding: 0px 62px;
+    padding-bottom: 96px;
   }
 }
 .p-about__info__tabs {
@@ -1371,7 +1375,7 @@
     display: none;
   }
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
   .u-hiddenMobile {
     display: none;
   }
@@ -1381,33 +1385,83 @@
   display: block;
   clear: both;
 }
-@media only screen and (min-width: 767px) {
+@media only screen and (max-width: 767px) {
   .u-order__first--mobile {
     order: 1
   }
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 768px) {
   .u-order__first--desktop {
     order: 1
   }
 }
-@media only screen and (min-width: 767px) {
+@media only screen and (max-width: 767px) {
   .u-order__second--mobile {
     order: 2
   }
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 768px) {
   .u-order__second--desktop {
     order: 2
   }
 }
-@media only screen and (min-width: 767px) {
+@media only screen and (max-width: 767px) {
   .u-order__third--mobile {
     order: 3
   }
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 768px) {
   .u-order__third--desktop {
     order: 3
+  }
+}
+@media only screen and (max-width: 767px) {
+  .u-order__fourth--mobile {
+    order: 4
+  }
+}
+@media only screen and (min-width: 768px) {
+  .u-order__fourth--desktop {
+    order: 4
+  }
+}
+@media only screen and (max-width: 767px) {
+  .u-order__fifth--mobile {
+    order: 5
+  }
+}
+@media only screen and (min-width: 768px) {
+  .u-order__fifth--desktop {
+    order: 5
+  }
+}
+@media only screen and (max-width: 767px) {
+  .u-order__sixth--mobile {
+    order: 6
+  }
+}
+@media only screen and (min-width: 768px) {
+  .u-order__sixth--desktop {
+    order: 6
+  }
+}
+@media only screen and (max-width: 767px) {
+  .u-order__seventh--mobile {
+    order: 7
+  }
+}
+@media only screen and (min-width: 768px) {
+  .u-order__seventh--desktop {
+    order: 7
+  }
+}
+@media only screen and (max-width: 767px) {
+  .u-order__eighth--mobile {
+    order: 8
+  }
+}
+@media only screen and (min-width: 768px) {
+  .u-order__eighth--desktop {
+    order: 8
   }
 }
