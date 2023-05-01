@@ -7,7 +7,6 @@ desktopMode.addEventListener('change', function(e) {
     if (accordion.classList.contains('js-accordion--desktopExpand')) {
       let content = accordion.nextElementSibling;
       if (e.matches) {
-        console.log('DESKTOP MODE');
         accordion.classList.add("active");
         content.style.maxHeight = content.scrollHeight + "px";
       } else {

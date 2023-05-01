@@ -6,9 +6,9 @@
     <title>Nailist Top Page</title>
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/> 
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css"> 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
 </head>
 <body>
   <!-- Desktop sidemenu -->
@@ -555,7 +555,6 @@
       <img class="c-imageBanner" src="images/nails_banner.png">
       
       <!-- Event -->
-
       <div class="c-gallery">
         <div class="c-gallery__title">
           <div class="c-gallery__title__text">
@@ -563,48 +562,56 @@
           </div>
         </div>
         <div class="c-carousel">
-          <section class="splide" aria-label="Splide Basic HTML Example">
-            <div class="splide__track">
-              <ul class="splide__list">
-                <li class="splide__slide c-carousel__slide">
-                  <a class="c-card__container" href="#">
-                    <img class="c-card__image" src="images/event1.png">
-                    <span class="c-card__text">
-                      タイトルタイトルタイトル
-                    </span>
-                    <span class="c-card__subtext">
-                      EVENT | 2022.00.00
-                    </span>
-                  </a>
-                </li>
-                <li class="splide__slide c-carousel__slide">
-                  <a class="c-card__container" href="#">
-                    <img class="c-card__image" src="images/event2.png">
-                    <span class="c-card__text">
-                      タイトルタイトルタイトル
-                    </span>
-                    <span class="c-card__subtext">
-                      EVENT | 2022.00.00
-                    </span>
-                  </a>
-                </li>
-                <li class="splide__slide c-carousel__slide">
-                  <a class="c-card__container" href="#">
-                    <img class="c-card__image" src="images/event3.png">
-                    <span class="c-card__text">
-                      タイトルタイトルタイトル
-                    </span>
-                    <span class="c-card__subtext">
-                      EVENT | 2022.00.00
-                    </span>
-                  </a>
-                </li>
-              </ul>
+          <div class="swiper c-swiper c-swiper--galleryOnDesktop c-swiper--events">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper c-swiper__wrapper--galleryOnDesktop c-swiper__wrapper--galleryOnDesktop--3row">
+              <!-- Slides -->
+              <div class="swiper-slide c-swiper__slide c-swiper__slide--galleryOnDesktop c-swiper__slide--galleryOnDesktop--3row">
+                <a class="c-card" href="#">
+                  <img class="c-card__image" src="images/event1.png">
+                  <span class="c-card__text">
+                    タイトルタイトルタイトル
+                  </span>
+                  <span class="c-card__subtext">
+                    EVENT | 2022.00.00
+                  </span>
+                </a>
+              </div>
+              <div class="swiper-slide c-swiper__slide c-swiper__slide--galleryOnDesktop c-swiper__slide--galleryOnDesktop--3row">
+                <a class="c-card" href="#">
+                  <img class="c-card__image" src="images/event2.png">
+                  <span class="c-card__text">
+                    タイトルタイトルタイトル
+                  </span>
+                  <span class="c-card__subtext">
+                    EVENT | 2022.00.00
+                  </span>
+                </a>
+              </div>
+              <div class="swiper-slide c-swiper__slide c-swiper__slide--galleryOnDesktop c-swiper__slide--galleryOnDesktop--3row">
+                <a class="c-card" href="#">
+                  <img class="c-card__image" src="images/event3.png">
+                  <span class="c-card__text">
+                    タイトルタイトルタイトル
+                  </span>
+                  <span class="c-card__subtext">
+                    EVENT | 2022.00.00
+                  </span>
+                </a>
+              </div>
             </div>
-          </section>
+  
+            <!-- navigation buttons -->
+            <div class="swiper-button-prev c-swiper__button--prev u-hiddenDesktop">
+              ◀
+            </div>
+            <div class="swiper-button-next c-swiper__button--next u-hiddenDesktop">
+              ▶
+            </div>
+          </div>
         </div>
       </div>
-
+      
       <!-- Topics -->
       <div class="c-gallery">
         <div class="c-gallery__title">
@@ -613,45 +620,53 @@
           </div>
         </div>
         <div class="c-carousel">
-          <section class="splide" aria-label="Splide Basic HTML Example">
-            <div class="splide__track">
-              <ul class="splide__list">
-                <li class="splide__slide c-carousel__slide">
-                  <a class="c-card__container" href="#">
-                    <img class="c-card__image" src="images/topics1.png">
-                    <span class="c-card__text">
-                      タイトルタイトルタイトル
-                    </span>
-                    <span class="c-card__subtext">
-                      EVENT | 2022.00.00
-                    </span>
-                  </a>
-                </li>
-                <li class="splide__slide c-carousel__slide">
-                  <a class="c-card__container" href="#">
-                    <img class="c-card__image" src="images/topics2.png">
-                    <span class="c-card__text">
-                      タイトルタイトルタイトル
-                    </span>
-                    <span class="c-card__subtext">
-                      EVENT | 2022.00.00
-                    </span>
-                  </a>
-                </li>
-                <li class="splide__slide c-carousel__slide">
-                  <a class="c-card__container" href="#">
-                    <img class="c-card__image" src="images/topics3.png">
-                    <span class="c-card__text">
-                      タイトルタイトルタイトル
-                    </span>
-                    <span class="c-card__subtext">
-                      EVENT | 2022.00.00
-                    </span>
-                  </a>
-                </li>
-              </ul>
+          <div class="swiper c-swiper c-swiper--galleryOnDesktop c-swiper--topics">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper c-swiper__wrapper--galleryOnDesktop">
+              <!-- Slides -->
+              <div class="swiper-slide c-swiper__slide c-swiper__slide--galleryOnDesktop">
+                <a class="c-card" href="#">
+                  <img class="c-card__image" src="images/topics1.png">
+                  <span class="c-card__text">
+                    タイトルタイトルタイトル
+                  </span>
+                  <span class="c-card__subtext">
+                    EVENT | 2022.00.00
+                  </span>
+                </a>
+              </div>
+              <div class="swiper-slide c-swiper__slide c-swiper__slide--galleryOnDesktop">
+                <a class="c-card" href="#">
+                  <img class="c-card__image" src="images/topics2.png">
+                  <span class="c-card__text">
+                    タイトルタイトルタイトル
+                  </span>
+                  <span class="c-card__subtext">
+                    EVENT | 2022.00.00
+                  </span>
+                </a>
+              </div>
+              <div class="swiper-slide c-swiper__slide c-swiper__slide--galleryOnDesktop">
+                <a class="c-card" href="#">
+                  <img class="c-card__image" src="images/topics3.png">
+                  <span class="c-card__text">
+                    タイトルタイトルタイトル
+                  </span>
+                  <span class="c-card__subtext">
+                    EVENT | 2022.00.00
+                  </span>
+                </a>
+              </div>
             </div>
-          </section>
+  
+            <!-- navigation buttons -->
+            <div class="swiper-button-prev c-swiper__button--prev u-hiddenDesktop">
+              ◀
+            </div>
+            <div class="swiper-button-next c-swiper__button--next u-hiddenDesktop">
+              ▶
+            </div>
+          </div>
         </div>
       </div>
 
@@ -668,99 +683,110 @@
             </a>
           </div>
         </div>
-        <ul class="c-cards">
-          <li class="c-card">
-            <a class="c-card__container" href="#">
-              <img class="c-card__image" src="images/latest1.png">
-              <span class="c-card__text">
-                タイトルタイトルタイトル
-              </span>
-              <span class="c-card__subtext">
-                EVENT | 2022.00.00
-              </span>
-            </a>
-          </li>
-          <li class="c-card">
-            <a class="c-card__container" href="#">
-              <img class="c-card__image" src="images/latest2.png">
-              <span class="c-card__text">
-                タイトルタイトルタイトル
-              </span>
-              <span class="c-card__subtext">
-                EVENT | 2022.00.00
-              </span>
-            </a>
-          </li>
-          <li class="c-card">
-            <a class="c-card__container" href="#">
-              <img class="c-card__image" src="images/latest3.png">
-              <span class="c-card__text">
-                タイトルタイトルタイトル
-              </span>
-              <span class="c-card__subtext">
-                EVENT | 2022.00.00
-              </span>
-            </a>
-          </li>
-          <li class="c-card">
-            <a class="c-card__container" href="#">
-              <img class="c-card__image" src="images/latest4.png">
-              <span class="c-card__text">
-                タイトルタイトルタイトル
-              </span>
-              <span class="c-card__subtext">
-                EVENT | 2022.00.00
-              </span>
-            </a>
-          </li>
-        </ul>
-        <ul class="c-cards">
-          <li class="c-card">
-            <a class="c-card__container" href="#">
-              <img class="c-card__image" src="images/latest5.png">
-              <span class="c-card__text">
-                タイトルタイトルタイトル
-              </span>
-              <span class="c-card__subtext">
-                EVENT | 2022.00.00
-              </span>
-            </a>
-          </li>
-          <li class="c-card">
-            <a class="c-card__container" href="#">
-              <img class="c-card__image" src="images/latest6.png">
-              <span class="c-card__text">
-                タイトルタイトルタイトル
-              </span>
-              <span class="c-card__subtext">
-                EVENT | 2022.00.00
-              </span>
-            </a>
-          </li>
-          <li class="c-card">
-            <a class="c-card__container" href="#">
-              <img class="c-card__image" src="images/latest7.png">
-              <span class="c-card__text">
-                タイトルタイトルタイトル
-              </span>
-              <span class="c-card__subtext">
-                EVENT | 2022.00.00
-              </span>
-            </a>
-          </li>
-          <li class="c-card">
-            <a class="c-card__container" href="#">
-              <img class="c-card__image" src="images/latest8.png">
-              <span class="c-card__text">
-                タイトルタイトルタイトル
-              </span>
-              <span class="c-card__subtext">
-                EVENT | 2022.00.00
-              </span>
-            </a>
-          </li>
-        </ul>
-        <img class="c-mobileCarouselPlaceholder" src="images/latest_article_carousel_placeholder.png">
+        <div class="c-carousel">
+          <div class="swiper c-swiper c-swiper--galleryOnDesktop c-swiper--articles">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper c-swiper__wrapper--galleryOnDesktop">
+              <!-- Slides -->
+              <div class="swiper-slide c-swiper__slide c-swiper__slide--galleryOnDesktop">
+                <a class="c-card" href="#">
+                  <img class="c-card__image" src="images/latest1.png">
+                  <span class="c-card__text">
+                    タイトルタイトルタイトル
+                  </span>
+                  <span class="c-card__subtext">
+                    EVENT | 2022.00.00
+                  </span>
+                </a>
+              </div>
+              <div class="swiper-slide c-swiper__slide c-swiper__slide--galleryOnDesktop">
+                <a class="c-card" href="#">
+                  <img class="c-card__image" src="images/latest2.png">
+                  <span class="c-card__text">
+                    タイトルタイトルタイトル
+                  </span>
+                  <span class="c-card__subtext">
+                    EVENT | 2022.00.00
+                  </span>
+                </a>
+              </div>
+              <div class="swiper-slide c-swiper__slide c-swiper__slide--galleryOnDesktop">
+                <a class="c-card" href="#">
+                  <img class="c-card__image" src="images/latest3.png">
+                  <span class="c-card__text">
+                    タイトルタイトルタイトル
+                  </span>
+                  <span class="c-card__subtext">
+                    EVENT | 2022.00.00
+                  </span>
+                </a>
+              </div>
+              <div class="swiper-slide c-swiper__slide c-swiper__slide--galleryOnDesktop">
+                <a class="c-card" href="#">
+                  <img class="c-card__image" src="images/latest4.png">
+                  <span class="c-card__text">
+                    タイトルタイトルタイトル
+                  </span>
+                  <span class="c-card__subtext">
+                    EVENT | 2022.00.00
+                  </span>
+                </a>
+              </div>
+              <div class="swiper-slide c-swiper__slide c-swiper__slide--galleryOnDesktop">
+                <a class="c-card" href="#">
+                  <img class="c-card__image" src="images/latest5.png">
+                  <span class="c-card__text">
+                    タイトルタイトルタイトル
+                  </span>
+                  <span class="c-card__subtext">
+                    EVENT | 2022.00.00
+                  </span>
+                </a>
+              </div>
+              <div class="swiper-slide c-swiper__slide c-swiper__slide--galleryOnDesktop">
+                <a class="c-card" href="#">
+                  <img class="c-card__image" src="images/latest6.png">
+                  <span class="c-card__text">
+                    タイトルタイトルタイトル
+                  </span>
+                  <span class="c-card__subtext">
+                    EVENT | 2022.00.00
+                  </span>
+                </a>
+              </div>
+              <div class="swiper-slide c-swiper__slide c-swiper__slide--galleryOnDesktop">
+                <a class="c-card" href="#">
+                  <img class="c-card__image" src="images/latest7.png">
+                  <span class="c-card__text">
+                    タイトルタイトルタイトル
+                  </span>
+                  <span class="c-card__subtext">
+                    EVENT | 2022.00.00
+                  </span>
+                </a>
+              </div>
+              <div class="swiper-slide c-swiper__slide c-swiper__slide--galleryOnDesktop">
+                <a class="c-card" href="#">
+                  <img class="c-card__image" src="images/latest8.png">
+                  <span class="c-card__text">
+                    タイトルタイトルタイトル
+                  </span>
+                  <span class="c-card__subtext">
+                    EVENT | 2022.00.00
+                  </span>
+                </a>
+              </div>
+            </div>
+  
+            <!-- navigation buttons -->
+            <div class="swiper-button-prev c-swiper__button--prev u-hiddenDesktop">
+              ◀
+            </div>
+            <div class="swiper-button-next c-swiper__button--next u-hiddenDesktop">
+              ▶
+            </div>
+          </div>
+        </div>
       </div>
 
       <!-- Youtube -->
@@ -772,7 +798,9 @@
           日本ネイリスト協会が主催するイベントの模様を映像で皆様にお届けします。
         </div>
         
-        <!-- <iframe class="p-youtube__media" src="https://www.youtube.com/embed/8d7axoslO3M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
+        <!--
+        <iframe class="p-youtube__media" src="https://www.youtube.com/embed/8d7axoslO3M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        -->
 
         <a class="p-youtube__link" href="#">
           公式YouTubeチャンネルへ
@@ -1215,11 +1243,11 @@
     </div>
   </div>
 
-  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
-  <script src="js/carousel.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <script src="js/swiper.js"></script>
   <script src="js/tab.js"></script>
   <script src="js/accordion.js"></script>
   <script src="js/defaultClick.js"></script>
-
+  
 </body>
 </html>
